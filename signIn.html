@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(155, 107, 133);
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-bottom: 20vh;
+            color: rgb(97, 93, 93);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0;
+            text-decoration: wavy;
+            
+        }
+      
+        .container {
+            background-color: #e7ccd7; /* Pastel gray */
+            padding: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            max-width: 400px;
+            max-height: 250px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgb(51, 41, 41);
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgb(241, 241, 241);
+        }
+
+        input[type="submit"] {
+            background-color: #705068;
+            color: white;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 150px;
+            margin-top: 70px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #bb668e; 
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="container">
+            <h1>Sign In</h1>
+            <form id="signInForm" onsubmit="return validateSignIn()">
+                <label for="signInUsername">Username:</label>
+                <input type="text" id="signInUsername" name="signInUsername" required>
+                <label for="signInPassword">Password:</label>
+                <input type="password" id="signInPassword" name="signInPassword" required>
+                <br>
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+    </div>
+    <script src="javaS.js">
+
+    </script>
+</body>
+</html>
